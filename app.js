@@ -17,13 +17,13 @@ const searchBooks = () =>{
     fetch(url)
     .then(res => res.json())
     .then(data => displaySearchResult(data.docs))
-    .catch(error => displayError(error));
+    // .catch(error => displayError(error));
 }
 
 // error catch functiion
-const displayError = error =>{
-    document.getElementById('error-message').style.display='block';
-}
+// const displayError = error =>{
+//     document.getElementById('error-message').style.display='block';
+// }
 
 
  //----------------------------------------------  
