@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Books Archive</title>
+</head>
+
+<body>
+
+    <!-- search main area  -->
+    <main class="search-main-area ">
+        <!-- books serch area  -->
+        <h2 class="text-center">Find our favorite <span class="text-danger">Books</span></h2>
+        <div class=" row mt-5">
+            <div class="input-group w-50 mx-auto">
+                <input id="search-field" type="text" placeholder=" Search Your Fevorite Books" class=" form-control">
+                <button onclick="searchBooks()" type="button" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+
+        <!-- error message and result count area  -->
+        <div class="row w-50 mx-auto mt-2">
+            <h6 class=" col-lg-3 bolder text-danger"><span class="text-primary">Search Result:</span> <span
+                    id="search-result-count"></span></h6>
+            <p id="error-message" class="text-danger col-lg-9"> Not found, Something went wrong. Please try agin
+                !</p>
+        </div>
+    </main>
+
+    <!-- search result area  -->
+    <section class="display-area">
+        <h3 class="text-center mt-5">Books Here</h3>
+        <div class="container mt-5">
+            <div id="search-result" class="row row-cols-lg-4 g-3 mt-5">
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+
+    </script>
+    <!-- custom js  -->
+    <script src="app.js"></script>
+</body>
+
+</html>
