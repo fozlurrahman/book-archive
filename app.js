@@ -35,13 +35,9 @@ const displaySearchResult = data =>{
 
 // search result count and error message dispaly 
    const searchResultCount = data.length;
-   if(searchResultCount !== 0){
+   
   document.getElementById('search-result-count').innerText = searchResultCount;
-   }
-   else{
-    const notFount = document.getElementById('search-result-count').innerText = '';
-    notFount.style.color = 'red';
-   }
+   
 
 // search result disaly area 
    data.forEach( book =>{
